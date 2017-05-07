@@ -27,15 +27,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calculatrice.cpp">
+    <ClCompile Include="src\Calculatrice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MonInterface.cpp">
+    <ClCompile Include="src\MonInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MonInterface.h">
+    <ClInclude Include="include\MonInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

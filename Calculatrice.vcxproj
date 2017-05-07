@@ -137,11 +137,11 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calculatrice.cpp" />
-    <ClCompile Include="MonInterface.cpp" />
+    <ClCompile Include="src\Calculatrice.cpp" />
+    <ClCompile Include="src\MonInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MonInterface.h" />
+    <ClInclude Include="include\MonInterface.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">

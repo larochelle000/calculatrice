@@ -1,0 +1,6 @@
+﻿  Calculatrice.cpp
+  MonInterface.cpp
+src\MonInterface.cpp(11): warning C4100: 'theName' : paramètre formel non référencé
+  Génération de code en cours...
+  Calculatrice.vcxproj -> C:\Users\Julien\Documents\calculatrice\debug\Calculatrice.exe
+  Calculatrice.vcxproj -> debug\Calculatrice.pdb (Full PDB)
