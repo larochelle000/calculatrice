@@ -13,5 +13,5 @@ int main( int argc, char ** argv )
  
 	MonInterface gui("Calculatrice v1.0");
 	
-    app.exec();
+	app.exec();
 }
