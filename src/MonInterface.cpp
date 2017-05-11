@@ -4,12 +4,12 @@ Julien Larochelle & Evelyne Proulx
 */
 
 
-#include <QStyleFactory>
-#include<qmainwindow.h>
+
 #include "include/MonInterface.h"
 
 MonInterface::MonInterface(const char * theName)
 {
+	zoneCentrale = new QWidget();
 
 	//TODO peut-être ne pas mettre dans ce constructeur
 
@@ -39,22 +39,32 @@ MonInterface::MonInterface(const char * theName)
 	DEL = new QPushButton("DEL");
 	//DEL->show();
 
-	vertical = new QVBoxLayout();
+	layout1 = new QGridLayout();
 
-	layout1 = new QHBoxLayout();
-	layout2 = new QHBoxLayout();
-	layout3 = new QHBoxLayout();
-	layout4 = new QHBoxLayout();
-	layout5 = new QHBoxLayout();
+	layout1->addWidget(ecran, 0, 0, 1, 4);
+	layout1->addWidget(CE, 1, 0);
+	layout1->addWidget(C, 1, 1);
+	layout1->addWidget(DEL, 1, 2);
+	layout1->addWidget(division, 1, 3);
+	layout1->addWidget(button7, 2, 0);
+	layout1->addWidget(button8, 2, 1);
+	layout1->addWidget(button9, 2, 2);
+	layout1->addWidget(multiplication, 2, 3);
+	layout1->addWidget(button4, 3, 0);
+	layout1->addWidget(button5, 3, 1);
+	layout1->addWidget(button6, 3, 2);
+	layout1->addWidget(moins, 3, 3);
+	layout1->addWidget(button1, 4, 0);
+	layout1->addWidget(button2, 4, 1);
+	layout1->addWidget(button3, 4, 2);
+	layout1->addWidget(plus, 4, 3);
+	layout1->addWidget(signe, 5, 0);
+	layout1->addWidget(button0, 5, 1);
+	layout1->addWidget(point, 5, 2);
+	layout1->addWidget(egale, 5, 3);
 
-	layout1->addWidget(CE);
-	layout1->addWidget(C);
-	layout1->addWidget(DEL);
-	layout1->addWidget(division);
-
-	vertical->addItem(layout1);
-
-	setLayout(vertical);
+	zoneCentrale->setLayout(layout1);
+	setCentralWidget(zoneCentrale);
 }
 
 void MonInterface::construct_calcu()

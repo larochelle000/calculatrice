@@ -11,9 +11,9 @@ Julien Larochelle & Evelyne Proulx
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QMainWindow>
-#include<qdialog.h>
+#include <QStyleFactory>
 
-class MonInterface : public QDialog
+class MonInterface : public QMainWindow
 {
 
 	Q_OBJECT
@@ -24,6 +24,8 @@ public:
 
 private:
 	// TODO mettre dans classe
+
+	QWidget* zoneCentrale;
 	QLabel* ecran;
 
 	QPushButton* button0;
@@ -49,13 +51,7 @@ private:
 	QPushButton* C;
 	QPushButton* DEL;
 
-	QVBoxLayout* vertical;
-
-	QHBoxLayout* layout1;
-	QHBoxLayout* layout2;
-	QHBoxLayout* layout3;
-	QHBoxLayout* layout4;
-	QHBoxLayout* layout5;
+	QGridLayout* layout1;
 
 	void construct_calcu();
 

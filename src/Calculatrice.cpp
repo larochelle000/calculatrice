@@ -12,6 +12,8 @@ int main( int argc, char ** argv )
 	QApplication app(argc, argv);
  
 	MonInterface gui("Calculatrice v1.0");
+
+	gui.show();
 	
-	app.exec();
+	return app.exec();
 }
